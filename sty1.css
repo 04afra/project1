@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+ .container{
+    height: 90vh;
+    width: 50%;
+    padding: 100px;
+    margin: auto;
+   
+} 
+    .formbox{
+        width: 50%;
+        padding: 10px;
+        /* float: left; */
+        height: 100%;
+        display: inline-block;
+    }
+    .form .inputbox {
+        position: relative;
+        /* width: 100%; */
+        height: 50px;
+        margin: 10px 0
+    }
+    .inputbox input{
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-bottom: 2px solid grey;
+
+    }
+    .inputbox label{
+        position: absolute;
+        top: 50%;
+        left:0;
+        transform: translateY(-50%);
+        /* font-size: 16px; */
+        color:gray; 
+        
+    }
+    .inputbox input:focus~label,
+    .inputbox input:valid~label{
+        top:-5px;
+        color:gray;
+    }
+    .inputbox i{
+        position: absolute;
+        top: 60%;
+        right: 12px;
+        transform:translateY(-50%);
+        font-size: 18px;
+        color: rgb(129, 158, 158);
+
+    }
+    .btn{
+        position: relative;
+        width: 40%;
+        height: 47px;
+        /* background: transparent; */
+         border:2px solid rgb(25, 177, 63); 
+        /* background-color: rgb(27, 182, 91); */
+        /* outline: none; */
+        border-radius: none;
+        cursor: pointer;
+        font-size: 16px;
+        background-color:rgb(22, 155, 77);
+        color:white;
+        font-weight: 600;
+    }
+    .btn:hover{
+        background-color:rgb(73, 168, 137);
+     }
+
+    .form.link{
+        font-size: 14.5px;
+        color: blueviolet;
+        text-align: center;
+        margin: 20px 0 10px;
+
+    }
+    .link p a {
+        color:rgb(76, 76, 109) ;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .link p a:hover{
+        text-decoration: underline;
+    }
+
+   .imgbox{
+    width: 50%;
+    height: 150px;
+    float: right;
+
+
+    }
+    .imgbox img{
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 130%;
+        height: 300%;
+        
+    }
